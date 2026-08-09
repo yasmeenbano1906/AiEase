@@ -1,0 +1,409 @@
+/* ==========================
+   ABOUT AIEASE
+========================== */
+.about-aiease {
+
+    padding: 120px 0;
+    text-align: center;
+
+}
+.about-aiease p {
+
+    max-width: 750px;
+    margin: 20px auto 40px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--text-light);
+
+}
+
+/* ==========================
+   AI TOOLS PREVIEW
+========================== */
+.ai-tools-preview {
+
+    padding: 120px 0;
+
+}
+.ai-tool-cards {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+
+}
+.ai-tool-card {
+
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 35px;
+    border-radius: 25px;
+
+    background:
+        rgba(255, 255, 255, 0.55);
+
+    backdrop-filter: blur(20px);
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+
+    transition: 0.4s ease;
+
+}
+.ai-tool-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+/* CLICK ACTIVE GLOW */
+.ai-tool-card.active {
+
+    border: 3px solid #8b5cf6 !important;
+
+    transform:
+        translateY(-15px) scale(1.04);
+
+    box-shadow:
+
+        0 0 20px #8b5cf6,
+        0 0 50px #8b5cf6,
+        0 0 100px rgba(139, 92, 246, 0.8),
+        0 0 150px rgba(0, 217, 255, 0.4) !important;
+
+}
+
+/* MOVING LIGHT LINE */
+.ai-tool-card.active::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+
+    background:
+
+        linear-gradient(90deg,
+
+            transparent,
+            #8b5cf6,
+            white,
+            #00d9ff,
+
+            transparent);
+
+    box-shadow:
+
+        0 0 25px #8b5cf6;
+
+    animation:
+
+        aiToolGlow 1s linear infinite;
+
+}
+@keyframes aiToolGlow {
+
+    from {
+
+        left: -100%;
+
+    }
+    to {
+
+        left: 100%;
+
+    }
+
+}
+.ai-tool-card.active::after {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+
+    background:
+
+        radial-gradient(circle,
+
+            rgba(139, 92, 246, 0.25),
+
+            transparent 70%);
+
+    pointer-events: none;
+
+}
+
+/* ==========================
+   AI INTRO SECTION
+========================== */
+.ai-intro {
+
+    padding: 120px 0;
+
+}
+
+/* Section Container */
+.section-container {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+/* Section Title */
+.section-title {
+
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.section-title span {
+
+    color: #8b5cf6;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.section-title h2 {
+
+    font-size: 3rem;
+    margin: 15px 0;
+    color: var(--text);
+
+}
+.section-title p {
+
+    font-size: 1.1rem;
+    color: var(--text-light);
+
+}
+
+/* AI Cards */
+.ai-cards {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+.ai-info-card {
+
+    min-height: 280px;
+    padding: 35px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    background:
+
+        rgba(255, 255, 255, 0.65);
+
+    backdrop-filter: blur(20px);
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: 0.4s ease;
+
+}
+.ai-info-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+/* ICON */
+.ai-info-card .icon {
+
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+
+}
+
+/* TITLE */
+.ai-info-card h3 {
+
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+
+}
+
+/* DESCRIPTION */
+.ai-info-card p {
+
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+
+}
+
+/* ==========================
+   AI CARD PURPLE GLOW
+========================== */
+.ai-info-card.active {
+
+    border: 3px solid #a855f7 !important;
+    transform: translateY(-15px) scale(1.04) !important;
+    box-shadow:
+
+        0 0 20px #a855f7,
+        0 0 50px #a855f7,
+        0 0 100px rgba(168, 85, 247, 0.7),
+        0 0 160px rgba(124, 58, 237, 0.6) !important;
+
+}
+
+/* Moving Blue Line */
+.ai-info-card.active::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+
+    background:
+
+        linear-gradient(90deg,
+            transparent,
+            #a855f7,
+            white,
+            #c084fc,
+            transparent);
+
+    box-shadow:
+
+        0 0 25px #a855f7;
+
+    animation: aiGlowLine 1s linear infinite;
+
+}
+
+/* Glow Inside Card */
+.ai-info-card.active::after {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+
+    background:
+
+        radial-gradient(circle at top,
+            rgba(168, 85, 247, 0.25),
+            transparent 70%);
+
+    pointer-events: none;
+
+}
+
+/* Keep content above glow */
+.ai-info-card>* {
+
+    position: relative;
+    z-index: 2;
+
+}
+.ai-info-card,
+.tool-card {
+
+    will-change: transform, opacity;
+
+}
+@keyframes aiGlowLine {
+
+    0% {
+
+        left: -100%;
+
+    }
+    100% {
+
+        left: 100%;
+
+    }
+}
+
+/* ==========================
+   CTA SECTION
+========================== */
+.cta-section {
+
+    padding: 120px 0;
+    text-align: center;
+
+}
+.cta-container {
+
+    padding: 70px 40px;
+    border-radius: 35px;
+
+    background:
+
+        linear-gradient(135deg,
+            rgba(139, 92, 246, 0.15),
+            rgba(0, 217, 255, 0.12));
+
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    backdrop-filter: blur(20px);
+
+}
+.cta-container h2 {
+
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.cta-container p {
+
+    max-width: 650px;
+    margin: auto;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 40px;
+
+}
+.cta-buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.btn-secondary {
+
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: 1px solid #8b5cf6;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s ease;
+
+}
+.btn-secondary:hover {
+
+    background: #8b5cf6;
+    color: white;
+
+}
+@media(max-width:600px) {
+
+    .cta-container h2 {
+
+        font-size: 2rem;
+
+    }
+    .cta-buttons {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
