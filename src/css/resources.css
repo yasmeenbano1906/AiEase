@@ -1,0 +1,443 @@
+/* RESOURCES HERO */
+.resources-hero {
+
+    width: 100%;
+    padding: 150px 0 110px;
+    background: #ffffff;
+    overflow: hidden;
+
+}
+
+/* CONTAINER */
+.resources-hero-container {
+
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(360px, .95fr);
+
+    align-items: center;
+    gap: 70px;
+
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.resources-hero-content {
+
+    max-width: 700px;
+
+}
+
+
+.resources-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 9px 16px;
+
+    border-radius: 999px;
+
+    border: 1px solid #e9d5ff;
+
+    background: #faf5ff;
+
+    color: #7c3aed;
+
+    font-size: .78rem;
+
+    font-weight: 800;
+
+    letter-spacing: .05em;
+
+}
+
+
+.resources-hero-content h1 {
+
+    margin: 28px 0 24px;
+
+    color: #111827;
+
+    font-size: clamp(3rem, 5vw, 4.7rem);
+
+    line-height: 1.03;
+
+    letter-spacing: -.05em;
+
+    font-weight: 800;
+
+}
+
+
+.resources-hero-content h1 span {
+
+    display: block;
+
+    color: #7c3aed;
+
+}
+
+
+.resources-hero-content p {
+
+    max-width: 640px;
+
+    margin: 0 0 35px;
+
+    color: #64748b;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.resources-hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.resources-hero-buttons a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 24px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: .92rem;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+
+}
+
+
+.resources-primary-btn {
+
+    background: #7c3aed;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(124,58,237,.18);
+
+}
+
+
+.resources-primary-btn:hover {
+
+    transform: translateY(-3px);
+
+    background: #6d28d9;
+
+}
+
+
+.resources-secondary-btn {
+
+    background: #ffffff;
+
+    color: #374151;
+
+    border: 1px solid #ddd6fe;
+
+}
+
+
+.resources-secondary-btn:hover {
+
+    color: #7c3aed;
+
+    border-color: #a78bfa;
+
+}
+
+
+/* =====================================================
+   VISUAL
+===================================================== */
+
+.resources-hero-visual {
+
+    position: relative;
+
+    min-height: 430px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.resource-orbit {
+
+    position: absolute;
+
+    width: 360px;
+
+    height: 360px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(139,92,246,.16);
+
+    box-shadow:
+        0 0 80px rgba(139,92,246,.08);
+
+}
+
+
+.resource-orbit::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 150px;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: rgba(168,85,247,.12);
+
+    filter: blur(35px);
+
+}
+
+
+.resource-glass-card {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(420px, 100%);
+
+    padding: 34px;
+
+    border-radius: 28px;
+
+    border: 1px solid rgba(139,92,246,.15);
+
+    background: rgba(255,255,255,.78);
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 25px 60px rgba(15,23,42,.08),
+        0 0 60px rgba(139,92,246,.08);
+
+}
+
+
+.resource-card-icon {
+
+    width: 56px;
+
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 24px;
+
+    border-radius: 16px;
+
+    background: #f3e8ff;
+
+    color: #7c3aed;
+
+}
+
+
+.resource-card-icon svg {
+
+    width: 25px;
+
+    height: 25px;
+
+}
+
+
+.resource-glass-card > span {
+
+    color: #8b5cf6;
+
+    font-size: .72rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+
+}
+
+
+.resource-glass-card h3 {
+
+    margin: 10px 0;
+
+    color: #111827;
+
+    font-size: 1.5rem;
+
+}
+
+
+.resource-glass-card p {
+
+    margin: 0;
+
+    color: #6b7280;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .resources-hero {
+
+        padding: 120px 0 90px;
+
+    }
+
+    .resources-hero-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+    }
+
+    .resources-hero-content {
+
+        max-width: 750px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+    .resources-hero-content p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .resources-hero-buttons {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .resources-hero {
+
+        padding: 100px 0 70px;
+
+    }
+
+    .resources-hero-container {
+
+        width: calc(100% - 32px);
+
+    }
+
+    .resources-hero-content h1 {
+
+        font-size: 2.8rem;
+
+    }
+
+    .resources-hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .resources-hero-buttons a {
+
+        width: 100%;
+
+    }
+
+    .resources-hero-visual {
+
+        min-height: 350px;
+
+    }
+
+    .resource-orbit {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+    .resource-glass-card {
+
+        padding: 25px;
+
+    }
+
+}
