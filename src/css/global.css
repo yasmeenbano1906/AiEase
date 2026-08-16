@@ -1,10 +1,4 @@
-/* =====================================================
-   AiEase Global Design System
-===================================================== */
-
-/* ==========================
-   ROOT VARIABLES
-========================== */
+/* AiEase Global Design System */
 :root {
 
     /* Colors */
@@ -13,8 +7,7 @@
     --text: #1F2937;
     --text-light: #6B7280;
 
-    /* Brand Color
-       We will finalize later */
+    /* Brand Color */
     --primary: #7C3AED;
     --primary-light: #A78BFA;
 
@@ -33,9 +26,6 @@
 
 }
 
-/* ==========================
-   RESET
-========================== */
 * {
 
     margin: 0;
@@ -43,11 +33,13 @@
     box-sizing: border-box;
 
 }
+
 html {
 
     scroll-behavior: smooth;
 
 }
+
 body {
 
     font-family:
@@ -55,19 +47,14 @@ body {
         Arial,
         sans-serif;
 
-    /* background:
-        var(--background);
-
     color:
-        var(--text); */
+        var(--text);
     color: #1e293b;
     background: #ffffff;
     overflow-x: hidden;
 }
 
-/* ==========================
-   LINKS
-========================== */
+/* LINKS */
 a {
 
     text-decoration: none;
@@ -75,9 +62,7 @@ a {
 
 }
 
-/* ==========================
-   IMAGES
-========================== */
+/* IMAGES */
 img {
 
     max-width: 100%;
@@ -85,9 +70,7 @@ img {
 
 }
 
-/* ==========================
-   GLASS STYLE
-========================== */
+/* GLASS STYLE */
 .glass {
 
     background:
@@ -104,9 +87,7 @@ img {
 
 }
 
-/* ==========================
-   BUTTON BASE
-========================== */
+/* BUTTON BASE */
 .btn-primary {
 
     display: inline-flex;
@@ -133,6 +114,7 @@ img {
         var(--transition);
 
 }
+
 .btn-primary:hover {
 
     transform:
@@ -145,9 +127,7 @@ img {
 
 }
 
-/* ==========================
-   3D BACKGROUND
-========================== */
+/* 3D BACKGROUND */
 #background-canvas {
 
     position: fixed;

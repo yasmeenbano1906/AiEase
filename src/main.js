@@ -5,6 +5,7 @@ import "./css/sections.css";
 import "./css/responsive.css";
 import "./css/footer.css";
 
+// JAVASCRIPT
 import "./js/icons.js";
 import "./js/navbar.js";
 import "./js/animations.js";

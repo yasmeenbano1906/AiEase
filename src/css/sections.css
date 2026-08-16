@@ -1,6 +1,4 @@
-/* ==========================
-   ABOUT AIEASE
-========================== */
+/* ABOUT AIEASE */
 .about-aiease {
 
     padding: 120px 0;
@@ -17,9 +15,7 @@
 
 }
 
-/* ==========================
-   AI TOOLS PREVIEW
-========================== */
+/* AI TOOLS PREVIEW */
 .ai-tools-preview {
 
     padding: 120px 0;
@@ -57,7 +53,6 @@
 
 }
 
-/* CLICK ACTIVE GLOW */
 .ai-tool-card.active {
 
     border: 3px solid #8b5cf6 !important;
@@ -137,16 +132,13 @@
 
 }
 
-/* ==========================
-   AI INTRO SECTION
-========================== */
+/* AI INTRO SECTION */
 .ai-intro {
 
     padding: 120px 0;
 
 }
 
-/* Section Container */
 .section-container {
 
     width: 90%;
@@ -155,7 +147,6 @@
 
 }
 
-/* Section Title */
 .section-title {
 
     text-align: center;
@@ -216,7 +207,6 @@
 
 }
 
-/* ICON */
 .ai-info-card .icon {
 
     font-size: 3.5rem;
@@ -224,7 +214,6 @@
 
 }
 
-/* TITLE */
 .ai-info-card h3 {
 
     font-size: 1.5rem;
@@ -232,7 +221,6 @@
 
 }
 
-/* DESCRIPTION */
 .ai-info-card p {
 
     font-size: 1rem;
@@ -241,9 +229,7 @@
 
 }
 
-/* ==========================
-   AI CARD PURPLE GLOW
-========================== */
+/* AI CARD PURPLE GLOW */
 .ai-info-card.active {
 
     border: 3px solid #a855f7 !important;
@@ -257,7 +243,6 @@
 
 }
 
-/* Moving Blue Line */
 .ai-info-card.active::before {
 
     content: "";
@@ -302,7 +287,6 @@
 
 }
 
-/* Keep content above glow */
 .ai-info-card>* {
 
     position: relative;
@@ -329,9 +313,7 @@
     }
 }
 
-/* ==========================
-   CTA SECTION
-========================== */
+/* CTA SECTION */
 .cta-section {
 
     padding: 120px 0;
