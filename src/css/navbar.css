@@ -184,3 +184,37 @@
     }
 
 }
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        padding: 25px;
+        gap: 18px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+        z-index: 1000;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+}

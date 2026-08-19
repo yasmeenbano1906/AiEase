@@ -113,6 +113,11 @@
     overflow:hidden;
 
 }
+.ai-tool-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
 .ai-card::before {
 
     content:"";
