@@ -1,10 +1,17 @@
 const menuBtn = document.querySelector(".menu-btn");
-const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelector(".nav-links");
+const dropdownBtn = document.querySelector(".drop-btn");
+const dropdown = document.querySelector(".dropdown");
 
-if (menuBtn && navMenu) {
 
-    menuBtn.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
+// Hamburger menu
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
-}
+// Explore AI dropdown
+dropdownBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    dropdown.classList.toggle("active");
+});
