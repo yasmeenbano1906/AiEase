@@ -1,0 +1,1 @@
+import"./icons-mnqaFH96.js";import"./gsap-Bd7hgNCT.js";import"./animations-BSDACcgL.js";import"./toolFinder-CZnh0lzd.js";import"./scrollAnimations-46WvlFrq.js";var e=document.querySelectorAll(`.faq-item`);e.forEach(t=>{t.querySelector(`.faq-question`).addEventListener(`click`,()=>{e.forEach(e=>{e!==t&&e.classList.remove(`active`)}),t.classList.toggle(`active`)})});
