@@ -29,9 +29,7 @@ container.appendChild(
     renderer.domElement
 );
 
-// =============================
 // NEURAL NODES
-// =============================
 const nodes = [];
 const nodeCount = 80;
 const nodeGeometry =
@@ -69,9 +67,7 @@ for(let i=0;i<nodeCount;i++){
 
 }
 
-// =============================
 // CONNECTION LINES
-// ============================
 const lineMaterial =
 new THREE.LineBasicMaterial({
 
@@ -130,9 +126,7 @@ new THREE.LineSegments(
 );
 scene.add(lines);
 
-// =============================
 // ANIMATION
-// =============================
 function animate(){
 
     requestAnimationFrame(
@@ -158,9 +152,7 @@ function animate(){
 }
 animate();
 
-// =============================
 // RESPONSIVE
-// =============================
 window.addEventListener(
 "resize",
 ()=>{

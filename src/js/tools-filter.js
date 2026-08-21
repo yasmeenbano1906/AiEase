@@ -1,7 +1,4 @@
-/* =====================================================
-   AI TOOLS SEARCH & FILTER
-===================================================== */
-
+/* AI TOOLS SEARCH & FILTER */
 const searchInput = document.querySelector("#searchInput");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const toolCards = document.querySelectorAll(".tool-card");
@@ -47,7 +44,6 @@ function filterTools() {
 
 
 /* SEARCH */
-
 if (searchInput) {
 
     searchInput.addEventListener("input", filterTools);
@@ -56,7 +52,6 @@ if (searchInput) {
 
 
 /* FILTER BUTTONS */
-
 filterButtons.forEach(button => {
 
     button.addEventListener("click", () => {

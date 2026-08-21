@@ -5,10 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("DOMContentLoaded", () => {
 
-    /* =========================
-       AI INTRO
-    ========================= */
-
+    /* AI INTRO */
     if (document.querySelector(".ai-intro")) {
 
         gsap.from(".ai-info-card", {
@@ -31,10 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    /* =========================
-       TOOL CARDS
-    ========================= */
-
+    /* TOOL CARDS */
     if (document.querySelector(".tools-section")) {
 
         gsap.from(".tool-card", {
@@ -56,10 +50,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    /* =========================
-       SECTION TITLES
-    ========================= */
-
+    /* SECTION TITLES */
     const sectionTitles = document.querySelectorAll(".section-title");
 
     if (sectionTitles.length) {
@@ -81,10 +72,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    /* =========================
-       MODEL CARDS
-    ========================= */
-
+    /* MODEL CARDS */
     if (document.querySelector(".models-section")) {
 
         gsap.from(".model-card", {
