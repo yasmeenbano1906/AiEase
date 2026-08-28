@@ -11,6 +11,7 @@ export default defineConfig({
         tools: resolve(__dirname, 'src/pages/tools.html'),
         resources: resolve(__dirname, 'src/pages/resources.html'),
         contact: resolve(__dirname, 'src/pages/contact.html'),
+        about: resolve(__dirname, 'src/pages/about.html'),
       },
     },
   },
